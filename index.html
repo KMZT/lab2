@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klassy Cafe — лабораторная работа 2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header" id="home">
+    <div class="header__inner container">
+      <a class="logo" href="#home"><span class="logo__name">KLASSY</span><span class="logo__sub">CAFE</span></a>
+      <button class="header__toggle" aria-label="Открыть меню">☰</button>
+      <nav class="nav header__nav">
+        <a class="nav__link nav__link--active" href="#home">Главная</a>
+        <a class="nav__link" href="#about">О нас</a>
+        <a class="nav__link" href="#menu">Меню</a>
+        <a class="nav__link" href="#chefs">Повара</a>
+        <a class="nav__link" href="#features">Особенности</a>
+        <a class="nav__link" href="#contact">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__info">
+        <p class="hero__eyebrow">KLASSY CAFE</p>
+        <h1 class="hero__title">Лучший ресторан<br>для особенных вечеров</h1>
+        <p class="hero__text">Свежие продукты, уютная атмосфера и блюда, приготовленные с любовью.</p>
+        <a class="button button--light" href="#contact">Забронировать столик</a>
+      </div>
+      <div class="hero__image" role="img" aria-label="Интерьер ресторана"></div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about__grid">
+        <div class="about__content">
+          <p class="section-label">О НАШЕМ РЕСТОРАНЕ</p>
+          <h2 class="section-title">Мы создаём вкусные<br><span>впечатления</span></h2>
+          <p>Наш ресторан объединяет современную кухню, качественные продукты и спокойную атмосферу. Мы готовим блюда из свежих ингредиентов и стараемся сделать каждый визит приятным.</p>
+          <p>Здесь можно встретиться с друзьями, провести семейный ужин или просто попробовать новое блюдо.</p>
+          <a class="button button--red" href="#menu">Посмотреть меню</a>
+        </div>
+        <div class="about__photo about__photo--one"></div>
+        <div class="about__photo about__photo--two"></div>
+      </div>
+    </section>
+
+    <section class="menu section section--soft" id="menu">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">НАШЕ МЕНЮ</p>
+          <h2 class="section-title">Сегодняшние <span>блюда</span></h2>
+        </div>
+        <div class="menu-tabs" role="tablist">
+          <button class="menu-tabs__button menu-tabs__button--active" data-category="all">Все</button>
+          <button class="menu-tabs__button" data-category="main">Основные блюда</button>
+          <button class="menu-tabs__button" data-category="dessert">Десерты</button>
+        </div>
+        <div class="menu-grid">
+          <article class="dish" data-category="main"><div class="dish__image dish__image--1"></div><div class="dish__body"><h3>Паста с курицей</h3><p>Нежный соус, паста и свежая зелень.</p><strong>520 ₽</strong></div></article>
+          <article class="dish" data-category="main"><div class="dish__image dish__image--2"></div><div class="dish__body"><h3>Стейк с овощами</h3><p>Сочное мясо и запечённые овощи.</p><strong>890 ₽</strong></div></article>
+          <article class="dish" data-category="dessert"><div class="dish__image dish__image--3"></div><div class="dish__body"><h3>Клубничный десерт</h3><p>Сливочный крем, ягоды и бисквит.</p><strong>390 ₽</strong></div></article>
+          <article class="dish" data-category="dessert"><div class="dish__image dish__image--4"></div><div class="dish__body"><h3>Шоколадный торт</h3><p>Насыщенный шоколадный вкус.</p><strong>350 ₽</strong></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="chefs section" id="chefs">
+      <div class="container">
+        <div class="section-head"><p class="section-label">НАША КОМАНДА</p><h2 class="section-title">Познакомьтесь с <span>поварами</span></h2></div>
+        <div class="chefs-grid">
+          <article class="chef"><div class="chef__photo chef__photo--1"></div><h3>Алексей Иванов</h3><p>Шеф-повар</p></article>
+          <article class="chef"><div class="chef__photo chef__photo--2"></div><h3>Мария Петрова</h3><p>Кондитер</p></article>
+          <article class="chef"><div class="chef__photo chef__photo--3"></div><h3>Дмитрий Смирнов</h3><p>Су-шеф</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="features section section--dark" id="features">
+      <div class="container">
+        <div class="section-head section-head--light"><p class="section-label">ПОЧЕМУ МЫ</p><h2 class="section-title">Особенности <span>KLASSY</span></h2></div>
+        <div class="features-grid">
+          <div class="feature"><div class="feature__icon">01</div><h3>Свежие продукты</h3><p>Каждый день выбираем качественные ингредиенты.</p></div>
+          <div class="feature"><div class="feature__icon">02</div><h3>Опытные повара</h3><p>Блюда готовятся по проверенным рецептам.</p></div>
+          <div class="feature"><div class="feature__icon">03</div><h3>Уютная атмосфера</h3><p>Пространство подходит для отдыха и встреч.</p></div>
+          <div class="feature"><div class="feature__icon">04</div><h3>Быстрое обслуживание</h3><p>Стараемся уделить внимание каждому гостю.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__content"><p class="section-label">СВЯЖИТЕСЬ С НАМИ</p><h2 class="section-title">Забронируйте <span>столик</span></h2><p>Заполните форму, и мы свяжемся с вами для подтверждения бронирования.</p><div class="contact__details"><p><b>Телефон:</b> +7 (900) 123-45-67</p><p><b>Адрес:</b> ул. Центральная, 15</p><p><b>Время:</b> ежедневно 10:00–23:00</p></div></div>
+        <form class="form" id="reservationForm"><input class="form__input" type="text" name="name" placeholder="Ваше имя" required><input class="form__input" type="tel" name="phone" placeholder="Телефон" required><input class="form__input" type="date" name="date" required><select class="form__input" name="people"><option>2 человека</option><option>3 человека</option><option>4 человека</option><option>5 человек</option></select><button class="button button--red" type="submit">Забронировать</button><p class="form__message" id="formMessage"></p></form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer__inner"><p>© 2026 KLASSY CAFE</p><a href="#home">Наверх ↑</a></div></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
